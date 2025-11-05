@@ -20,6 +20,7 @@ export function Header({ user, currentScreen, onNavigate, onLogout }) {
     if (user.role === "student") {
       return [
         { id: "dashboard", label: "Trang chủ", screen: "dashboard" },
+        { id: "profile-student", label: "Hồ sơ", screen: "profile-student" },
         {
           id: "student-schedule",
           label: "Lịch học",
@@ -52,7 +53,7 @@ export function Header({ user, currentScreen, onNavigate, onLogout }) {
 
   return (
     // 1️⃣ THÊM "justify-between" VÀ GIỮ NGUYÊN "px-8"
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0388B4] h-16 shadow-sm flex items-center justify-between px-8">
+    <header className="bg-brand-gradient text-white h-16 flex items-center justify-between px-8 shadow-sm fixed top-0 left-0 right-0 z-50">
       {/* Nội dung header */}
       {/* 2️⃣ LOẠI BỎ 2 DIV LỒNG (div mx-auto và div justify-between) */}
 
@@ -162,6 +163,14 @@ export function Header({ user, currentScreen, onNavigate, onLogout }) {
             <DropdownMenuContent align="end" className="w-48">
               {user?.role === "tutor" && (
                 <DropdownMenuItem onClick={() => onNavigate("profile")}>
+                  <UserIcon className="mr-2 h-4 w-4" />
+                  Hồ sơ cá nhân
+                </DropdownMenuItem>
+              )}
+              {user?.role === "student" && (
+                <DropdownMenuItem
+                  onClick={() => onNavigate("profile-student")}
+                >
                   <UserIcon className="mr-2 h-4 w-4" />
                   Hồ sơ cá nhân
                 </DropdownMenuItem>

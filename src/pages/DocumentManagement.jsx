@@ -308,7 +308,7 @@ export function DocumentManagement({ user, onNavigate }) {
                       href={`http://localhost:3000/uploads/${doc.file_path}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-3 py-1 rounded bg-[#0388B4] text-white text-sm hover:bg-[#027197]"
+                      className="inline-flex items-center px-3 py-1 rounded bg-brand-gradient text-white text-sm hover:bg-[#027197]"
                     >
                       <Eye className="h-4 w-4 mr-1" /> Xem
                     </a>
@@ -377,7 +377,7 @@ export function DocumentManagement({ user, onNavigate }) {
 
             {/* Nút hiển thị — khi bấm thì mở hộp chọn file */}
             <Button
-              className="bg-[#0388B4] text-white"
+              className="bg-brand-gradient text-white"
               onClick={() => fileInputRef.current?.click()}
             >
               <Upload className="h-4 w-4 mr-2" /> Tải lên tài liệu
@@ -452,7 +452,7 @@ export function DocumentManagement({ user, onNavigate }) {
                 e.preventDefault();
                 handleUpload(e);
               }}
-              className="mt-4 bg-[#0388B4] text-white"
+              className="mt-4 bg-brand-gradient text-white"
             >
               📤 Tải lên
             </Button>

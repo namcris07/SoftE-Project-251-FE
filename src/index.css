@@ -3836,3 +3836,13 @@ html {
     transform: translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1)) rotate(var(--tw-exit-rotate, 0));
   }
 }
+@layer utilities {
+  .bg-brand-gradient {
+    background: linear-gradient(to right, #00C0FF, #0388B4);
+    transition: all 0.4s ease;
+  }
+
+  .bg-brand-gradient:hover {
+    background: linear-gradient(to right, #05D5FF, #0270A1);
+  }
+}

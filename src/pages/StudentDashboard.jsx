@@ -85,7 +85,7 @@ export function StudentDashboard({ user, onNavigate }) {
         <div className="grid md:grid-cols-4 gap-4 mb-8">
           <Button
             onClick={() => onNavigate("scheduling")}
-            className="h-24 bg-[#0388B4] hover:bg-[#2851b4] text-white flex flex-col items-center justify-center space-y-2"
+            className="h-24 bg-brand-gradient text-white flex flex-col items-center justify-center space-y-2"
           >
             <Calendar className="h-6 w-6" />
             <span>Đặt lịch học</span>
@@ -101,7 +101,7 @@ export function StudentDashboard({ user, onNavigate }) {
 
           <Button
             onClick={() => onNavigate("payment")}
-            className="h-24 bg-[#0388B4] hover:bg-[#2851b4] text-white flex flex-col items-center justify-center space-y-2"
+            className="h-24 bg-brand-gradient text-white flex flex-col items-center justify-center space-y-2"
           >
             <CreditCard className="h-6 w-6" />
             <span>Thanh toán</span>
@@ -181,7 +181,7 @@ export function StudentDashboard({ user, onNavigate }) {
                       <p>Chưa có lịch học nào được đăng ký</p>
                       <Button
                         onClick={() => onNavigate("scheduling")}
-                        className="mt-4 bg-[#0388B4] hover:bg-[#2851b4] text-white"
+                        className="mt-4 bg-brand-gradient text-white"
                       >
                         Đặt lịch học ngay
                       </Button>

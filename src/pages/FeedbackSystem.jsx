@@ -160,7 +160,7 @@ export function FeedbackSystem({ user, onNavigate }) {
 
                   <Button
                     onClick={() => handleSubmitFeedback(session.id)}
-                    className="bg-[#0388B4] hover:bg-[#2851b4] text-white"
+                    className="bg-brand-gradient text-white"
                     disabled={rating === 0}
                   >
                     Gửi đánh giá
@@ -366,7 +366,7 @@ export function FeedbackSystem({ user, onNavigate }) {
           </CardDescription>
         </CardHeader>
         <CardContent className="grid md:grid-cols-2 gap-4">
-          <Button className="h-20 bg-[#0388B4] hover:bg-[#2851b4] text-white flex flex-col justify-center">
+          <Button className="h-20 bg-brand-gradient text-white flex flex-col justify-center">
             <MessageSquare className="h-6 w-6 mb-1" />
             Xem báo cáo phản hồi
           </Button>

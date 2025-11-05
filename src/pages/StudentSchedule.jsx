@@ -280,13 +280,7 @@ export function StudentSchedule({ user, onNavigate }) {
                 Buổi {s.sessionNumber}/{s.totalSessions}
               </p>
               <div className="flex space-x-2">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="text-[#0388B4] border-[#0388B4]"
-                >
-                  <Edit className="h-4 w-4 mr-1" /> Sửa
-                </Button>
+               
                 {s.status === "pending" && (
                   <Button
                     size="sm"
@@ -298,7 +292,7 @@ export function StudentSchedule({ user, onNavigate }) {
                 )}
                 <Button
                   size="sm"
-                  className="bg-[#0388B4] hover:bg-[#2851b4] text-white"
+                  className="bg-brand-gradient text-white"
                 >
                   Chi tiết
                 </Button>
@@ -380,7 +374,7 @@ export function StudentSchedule({ user, onNavigate }) {
                     {upcomingSession.location}
                   </p>
                 </div>
-                <Button className="bg-[#0388B4] hover:bg-[#2851b4] text-white">
+                <Button className="bg-brand-gradient text-white">
                   Xem chi tiết
                 </Button>
               </CardContent>
@@ -417,7 +411,7 @@ export function StudentSchedule({ user, onNavigate }) {
             <div className="flex space-x-2">
               <Button
                 onClick={() => onNavigate("scheduling")}
-                className="bg-[#0388B4] hover:bg-[#2851b4] text-white"
+                className="bg-brand-gradient text-white"
               >
                 <Plus className="h-4 w-4 mr-2" /> Đặt lịch học mới
               </Button>

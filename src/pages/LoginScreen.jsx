@@ -54,7 +54,7 @@ export function LoginScreen({ onLogin }) {
   return (
     <div className="min-h-screen bg-[#F3F3F5] flex flex-col">
       {/* 🔹 HEADER (Navbar) */}
-      <header className="bg-[#0388B4] w-full h-16 shadow-sm flex items-center px-8">
+      <header className="bg-brand-gradient w-full h-16 shadow-sm flex items-center px-8">
         {/* Logo + Title */}
         <div className="flex items-center space-x-2">
           <a href="/" className="flex items-center">
@@ -110,7 +110,7 @@ export function LoginScreen({ onLogin }) {
               {/* SSO Button */}
               <Button
                 variant="outline"
-                className="w-full mb-2 border-[#0388B4] text-[#044CC8] hover:bg-[#0388B4] hover:text-white text-sm font-medium h-9 rounded-lg"
+                className="w-full mb-2 border-[#0388B4] text-[#044CC8] hover:bg-brand-gradient hover:text-white text-sm font-medium h-9 rounded-lg"
               >
                 🏠 Tài khoản HCMUT (HCMUT account)
               </Button>
@@ -151,7 +151,7 @@ export function LoginScreen({ onLogin }) {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#044CC8] hover:bg-[#033aa0] text-white text-sm font-medium h-9 rounded-lg mt-2"
+                  className="w-full bg-brand-gradient text-white text-sm font-medium h-9 rounded-lg mt-2"
                   disabled={loading}
                 >
                   {loading ? "Đang đăng nhập..." : "Đăng nhập"}

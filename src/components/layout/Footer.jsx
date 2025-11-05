@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaFacebook, FaEnvelope } from "react-icons/fa";
 export function Footer() {
   return (
-    <footer className="bg-[#0388B4] h-16 flex items-center px-8">
+    <footer className="bg-brand-gradient h-16 flex items-center px-8">
       {/* 🔹 Logo + Title */}
       <div className="flex items-center space-x-2">
         <a href="/" className="flex items-center">
@@ -74,7 +74,7 @@ export function Footer() {
             <path
               d="M7.78625 10.0142C8.13721 9.48653 8.84356 9.35294 9.3634 9.71533L14.6671 13.4126L17.548 10.8687L17.962 13.3726L14.7609 16.2397L8.09583 11.6274C7.57349 11.266 7.43451 10.5431 7.78625 10.0142Z"
               fill="#FF0909"
-              fill-opacity="0.86"
+              fillOpacity="0.86"
             />
           </svg>
         </a>

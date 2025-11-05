@@ -131,7 +131,10 @@ export function UserManagement({ user }) {
         <h1 className="text-2xl font-semibold text-[#0388B4]">
           👥 Quản lý người dùng
         </h1>
-        <Button className="bg-[#0388B4] text-white" onClick={handleAddUser}>
+        <Button
+          className="bg-brand-gradient text-white"
+          onClick={handleAddUser}
+        >
           <Plus className="h-4 w-4 mr-2" /> Thêm người dùng
         </Button>
       </div>

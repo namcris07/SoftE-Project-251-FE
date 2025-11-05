@@ -17,6 +17,7 @@ import { DocumentManagement } from "./pages/DocumentManagement.jsx";
 import { ScholarshipManagement } from "./pages/ScholarshipManagement.jsx";
 import { MessageScreen } from "./pages/MessageScreen.jsx";
 import { TutorAvailability } from "./pages/TutorAvailability.jsx";
+import {StudentProfile} from "./pages/StudentProfile.jsx";
 import { Toaster,toast } from "sonner";
 
 export default function App() {
@@ -158,7 +159,13 @@ export default function App() {
         return (
           <TutorAvailability user={currentUser} onNavigate={setCurrentScreen} />
         );
-      
+      case "profile-student":
+        return (
+          <StudentProfile
+            user={currentUser}
+            onNavigate={setCurrentScreen}
+          />
+        );
     }
   };
 

@@ -206,7 +206,7 @@ export function AdminDashboard({ user, onNavigate }) {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <Button
             onClick={() => onNavigate("users")}
-            className="h-24 bg-[#0388B4] hover:bg-[#2851b4] text-white flex flex-col items-center justify-center space-y-2"
+            className="h-24 bg-brand-gradient text-white flex flex-col items-center justify-center space-y-2"
           >
             <Users className="h-6 w-6" />
             <span>Quản lý người dùng</span>
@@ -485,7 +485,7 @@ export function AdminDashboard({ user, onNavigate }) {
                 </div>
                 <Button
                   onClick={() => onNavigate("reports")}
-                  className="w-full mt-4 bg-[#0388B4] hover:bg-[#2851b4] text-white"
+                  className="w-full mt-4 bg-brand-gradient text-white"
                 >
                   Xem tất cả báo cáo
                 </Button>

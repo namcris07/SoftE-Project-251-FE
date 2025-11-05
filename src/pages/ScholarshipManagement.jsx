@@ -252,7 +252,7 @@ const totalScholarshipAmount = scholarships.reduce(
         <div className="grid md:grid-cols-4 gap-4 mb-6">
           <Card>
             <CardContent className="p-4 flex items-center space-x-3">
-              <div className="p-2 bg-[#0388B4] rounded-lg">
+              <div className="p-2 bg-brand-gradient rounded-lg">
                 <Award className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -321,7 +321,7 @@ const totalScholarshipAmount = scholarships.reduce(
                     <Search className="h-5 w-5 text-[#0388B4]" />
                     <span>Danh sách học bổng</span>
                   </CardTitle>
-                  <Button className="bg-[#0388B4] hover:bg-[#2851b4] text-white">
+                  <Button className="bg-brand-gradient hover:bg-[#2851b4] text-white">
                     <Plus className="h-4 w-4 mr-1" /> Thêm mới
                   </Button>
                 </div>
@@ -413,7 +413,7 @@ const totalScholarshipAmount = scholarships.reduce(
                       >
                         <Trash2 className="h-4 w-4 mr-1" /> Xóa
                       </Button>
-                      <Button size="sm" className="bg-[#0388B4] text-white">
+                      <Button size="sm" className="bg-brand-gradient text-white">
                         Chi tiết
                       </Button>
                     </div>
@@ -429,7 +429,7 @@ const totalScholarshipAmount = scholarships.reduce(
               <CardHeader>
                 <CardTitle className="flex justify-between">
                   <span>Đơn đăng ký học bổng</span>
-                  <Badge className="bg-[#0388B4]">
+                  <Badge className="bg-brand-gradient">
                     {pendingApplications} chờ duyệt
                   </Badge>
                 </CardTitle>

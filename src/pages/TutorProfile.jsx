@@ -165,7 +165,7 @@ if (!profileData || !profileData.name) {
                     }}
                     className={`border-[#0388B4] text-[#0388B4] ${
                       isEditing
-                        ? "bg-[#0388B4] text-white hover:bg-[#036E90]"
+                        ? "bg-brand-gradient text-white hover:bg-[#036E90]"
                         : ""
                     }`}
                   >
@@ -244,7 +244,7 @@ if (!profileData || !profileData.name) {
                           onClick={() =>
                             document.getElementById("avatarInput").click()
                           }
-                          className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full bg-[#0388B4] hover:bg-[#2851b4]"
+                          className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full bg-brand-gradient hover:bg-[#2851b4]"
                         >
                           <Upload className="h-4 w-4" />
                         </Button>
@@ -378,7 +378,7 @@ if (!profileData || !profileData.name) {
                   <div className="flex space-x-2 mt-6">
                     <Button
                       onClick={handleSaveProfile}
-                      className="bg-[#0388B4] text-white"
+                      className="bg-brand-gradient text-white"
                     >
                       Lưu thay đổi
                     </Button>
@@ -540,7 +540,7 @@ if (!profileData || !profileData.name) {
                 <div className="space-y-2">
                   <Button
                     onClick={() => onNavigate("scheduling")}
-                    className="w-full bg-[#0388B4] text-white"
+                    className="w-full bg-brand-gradient text-white"
                   >
                     Quản lý lịch dạy
                   </Button>

@@ -146,7 +146,7 @@ export function TutorAvailability({ user, onNavigate }) {
           {/* Dialog thêm khung giờ */}
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="bg-[#0388B4] hover:bg-[#2851b4] text-white">
+              <Button className="bg-brand-gradient text-white">
                 <Plus className="h-4 w-4 mr-2" />
                 Thêm khung giờ
               </Button>
@@ -246,7 +246,7 @@ export function TutorAvailability({ user, onNavigate }) {
                 </Button>
                 <Button
                   onClick={handleAddSlot}
-                  className="bg-[#0388B4] hover:bg-[#2851b4]"
+                  className="bg-brand-gradient"
                 >
                   Thêm
                 </Button>

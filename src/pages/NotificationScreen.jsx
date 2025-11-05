@@ -158,7 +158,7 @@ export function NotificationScreen({ user, onNavigate }) {
         <section className="grid md:grid-cols-3 gap-4">
           <Card>
             <CardContent className="p-4 flex items-center space-x-3">
-              <div className="p-2 bg-[#0388B4] rounded-lg">
+              <div className="p-2 bg-brand-gradient rounded-lg">
                 <Bell className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -265,7 +265,7 @@ export function NotificationScreen({ user, onNavigate }) {
                             <div className="flex items-start space-x-3">
                               <div
                                 className={`p-2 rounded-lg ${
-                                  !n.read ? "bg-[#0388B4]" : "bg-gray-100"
+                                  !n.read ? "bg-brand-gradient" : "bg-gray-100"
                                 }`}
                               >
                                 <Icon
@@ -339,7 +339,7 @@ export function NotificationScreen({ user, onNavigate }) {
                                     n.type === "payment") && (
                                     <Button
                                       size="sm"
-                                      className="bg-[#0388B4] hover:bg-[#2851b4] text-white text-xs"
+                                      className="bg-brand-gradient hover:bg-[#2851b4] text-white text-xs"
                                       onClick={() =>
                                         onNavigate(
                                           n.type === "schedule"

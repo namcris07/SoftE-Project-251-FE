@@ -173,7 +173,7 @@ export function MessageScreen({ user }) {
                     {/* Nút Chat mới */}
                     <Button
                       size="sm"
-                      className="bg-[#0388B4] hover:bg-[#0388B4]/90 text-white"
+                      className="bg-brand-gradient hover:bg-brand-gradient/90 text-white"
                       onClick={() => setShowNewChat(true)}
                     >
                       + Chat mới
@@ -210,7 +210,7 @@ export function MessageScreen({ user }) {
                           <div className="flex items-start space-x-3">
                             <Avatar className="h-12 w-12">
                               <AvatarImage src={conv.avatar || ""} />
-                              <AvatarFallback className="bg-[#0388B4] text-white">
+                              <AvatarFallback className="bg-brand-gradient text-white">
                                 {conv.partner_name?.charAt(0) || "?"}
                               </AvatarFallback>
                             </Avatar>
@@ -237,7 +237,7 @@ export function MessageScreen({ user }) {
                                   {conv.last_message || "Chưa có tin nhắn"}
                                 </p>
                                 {conv.unread > 0 && (
-                                  <Badge className="bg-[#0388B4] ml-2">
+                                  <Badge className="bg-brand-gradient ml-2">
                                     {conv.unread}
                                   </Badge>
                                 )}
@@ -276,7 +276,7 @@ export function MessageScreen({ user }) {
                           <AvatarImage
                             src={selectedConversation.avatar || ""}
                           />
-                          <AvatarFallback className="bg-[#0388B4] text-white">
+                          <AvatarFallback className="bg-brand-gradient text-white">
                             {selectedConversation.partner_name?.charAt(0) ||
                               "?"}
                           </AvatarFallback>
@@ -321,7 +321,7 @@ export function MessageScreen({ user }) {
                               <div
                                 className={`rounded-lg px-4 py-2 ${
                                   message.sender_id === user.id
-                                    ? "bg-[#0388B4] text-white"
+                                    ? "bg-brand-gradient text-white"
                                     : "bg-gray-200 text-gray-900"
                                 }`}
                               >
@@ -359,7 +359,7 @@ export function MessageScreen({ user }) {
                       </div>
                       <Button
                         onClick={handleSendMessage}
-                        className="bg-[#0388B4] hover:bg-[#0388B4]/90 mb-1"
+                        className="bg-brand-gradient/90 mb-1"
                         disabled={!newMessage.trim()}
                       >
                         <Send className="h-5 w-5" />
@@ -406,7 +406,7 @@ export function MessageScreen({ user }) {
                   >
                     <Avatar className="h-10 w-10">
                       <AvatarImage src="" />
-                      <AvatarFallback className="bg-[#0388B4] text-white">
+                      <AvatarFallback className="bg-brand-gradient text-white">
                         {contact.full_name?.charAt(0) || "?"}
                       </AvatarFallback>
                     </Avatar>

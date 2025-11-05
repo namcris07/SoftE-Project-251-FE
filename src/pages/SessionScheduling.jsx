@@ -245,12 +245,12 @@ export function SessionScheduling({ user, onNavigate }) {
                   </div>
 
                   <div className="flex space-x-3">
-                    <Button className="bg-[#0388B4] text-white">
+                    <Button className="bg-brand-gradient text-white">
                       Đặt lịch học
                     </Button>
                     <Button
                       variant="outline"
-                      className="border-[#0388B4] text-[#0388B4]"
+                      className="border-brand-gradient text-brand-gradient"
                     >
                       Xem chi tiết
                     </Button>
@@ -334,7 +334,7 @@ export function SessionScheduling({ user, onNavigate }) {
             <div className="space-y-3">
               <Button
                 onClick={() => onNavigate("tutor-availability")}
-                className="w-full bg-[#0388B4] text-white"
+                className="w-full bg-brand-gradient text-white"
               >
                 Thêm khung giờ rảnh
               </Button>

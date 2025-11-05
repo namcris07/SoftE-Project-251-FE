@@ -153,7 +153,7 @@ export function TutorDashboard({ user, onNavigate }) {
           <div className="grid md:grid-cols-4 gap-4 mb-8">
             <Button
               onClick={() => onNavigate("scheduling")}
-              className="h-20 bg-[#0388B4] hover:bg-[#2851b4] text-white flex flex-col items-center justify-center space-y-2"
+              className="h-20 bg-brand-gradient hover:bg-[#2851b4] text-white flex flex-col items-center justify-center space-y-2"
             >
               <Calendar className="h-6 w-6" />
               <span>Quản lý lịch dạy</span>
@@ -168,14 +168,14 @@ export function TutorDashboard({ user, onNavigate }) {
             <Button
               onClick={() => onNavigate("documents")}
               variant="outline"
-              className="h-20 border-[#0388B4] text-[#0388B4] hover:bg-[#0388B4] hover:text-white flex flex-col items-center justify-center space-y-2"
+              className="h-20 border-[#0388B4] text-[#0388B4] hover:bg-brand-gradient hover:text-white flex flex-col items-center justify-center space-y-2"
             >
               <Upload className="h-6 w-6" />
               <span>Tải tài liệu</span>
             </Button>
             <Button
               variant="outline"
-              className="h-20 border-[#0388B4] text-[#0388B4] hover:bg-[#0388B4] hover:text-white flex flex-col items-center justify-center space-y-2"
+              className="h-20 border-[#0388B4] text-[#0388B4] hover:bg-brand-gradient hover:text-white flex flex-col items-center justify-center space-y-2"
             >
               <BarChart3 className="h-6 w-6" />
               <span>Thống kê</span>
@@ -219,7 +219,7 @@ export function TutorDashboard({ user, onNavigate }) {
                             }
                             className={
                               session.status === "upcoming"
-                                ? "bg-[#0388B4]"
+                                ? "bg-brand-gradient"
                                 : "bg-green-100 text-green-800"
                             }
                           >
@@ -242,7 +242,7 @@ export function TutorDashboard({ user, onNavigate }) {
                           </Button>
                           <Button
                             size="sm"
-                            className="bg-[#0388B4] hover:bg-[#2851b4] text-white"
+                            className="bg-brand-gradient hover:bg-[#2851b4] text-white"
                           >
                             Bắt đầu buổi học
                           </Button>

@@ -8,7 +8,8 @@ export function Home({ onNavigate }) {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#f6f8fc] to-white">
       {/* Header */}
-      <header className="bg-[#0388B4] w-full h-16 shadow-sm flex items-center px-8">
+      <header className="bg-brand-gradient w-full h-16 shadow-sm flex items-center px-8">
+      
         {/* Logo + Title */}
         <div className="flex items-center space-x-2">
           <a href="/" className="flex items-center">
@@ -57,14 +58,14 @@ export function Home({ onNavigate }) {
 
           <Button
             onClick={() => onNavigate("login")}
-            className="bg-[#0388B4] text-white px-8 py-6 rounded-lg text-lg font-semibold hover:bg-[#026d91] transition-all"
+            className="bg-brand-gradient text-white px-8 py-6 rounded-lg text-lg font-semibold hover:bg-[#026d91] transition-all"
           >
             Đăng nhập ngay
           </Button>
         </section>
 
         {/* Statistics Section */}
-        <section className="bg-[#0388B4] text-white">
+        <section className="bg-brand-gradient text-white">
           <div className="max-w-7xl mx-auto px-8 w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 lg:gap-16">
               <div className="flex flex-col items-center justify-center space-y-3 py-8">
@@ -117,7 +118,7 @@ export function Home({ onNavigate }) {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-white shadow-sm border hover:shadow-md transition-all">
                 <CardContent className="p-6">
-                  <div className="bg-[#0388B4]/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
+                  <div className="bg-brand-gradient/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
                     <Users className="w-6 h-6 text-[#0388B4]" />
                   </div>
                   <h3 className="text-[#1E3B5C] font-semibold text-lg mb-2">
@@ -132,7 +133,7 @@ export function Home({ onNavigate }) {
 
               <Card className="bg-white shadow-sm border hover:shadow-md transition-all">
                 <CardContent className="p-6">
-                  <div className="bg-[#0388B4]/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
+                  <div className="bg-brand-gradient/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
                     <Calendar className="w-6 h-6 text-[#0388B4]" />
                   </div>
                   <h3 className="text-[#1E3B5C] font-semibold text-lg mb-2">
@@ -146,7 +147,7 @@ export function Home({ onNavigate }) {
 
               <Card className="bg-white shadow-sm border hover:shadow-md transition-all">
                 <CardContent className="p-6">
-                  <div className="bg-[#0388B4]/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
+                  <div className="bg-brand-gradient/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
                     <Star className="w-6 h-6 text-[#0388B4]" />
                   </div>
                   <h3 className="text-[#1E3B5C] font-semibold text-lg mb-2">
@@ -161,7 +162,7 @@ export function Home({ onNavigate }) {
 
               <Card className="bg-white shadow-sm border hover:shadow-md transition-all">
                 <CardContent className="p-6">
-                  <div className="bg-[#0388B4]/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
+                  <div className="bg-brand-gradient/10 rounded-lg w-12 h-12 mb-4 flex items-center justify-center mx-auto">
                     <TrendingUp className="w-6 h-6 text-[#0388B4]" />
                   </div>
                   <h3 className="text-[#1E3B5C] font-semibold text-lg mb-2">
