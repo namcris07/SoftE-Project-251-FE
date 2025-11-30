@@ -13,6 +13,7 @@ COPY . .
 RUN npm run build --only=production
 
 FROM nginx:1.27-alpine3.21-slim
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # COPY THE BUILD FILE
 COPY --from=build /app/build /usr/share/nginx/html
