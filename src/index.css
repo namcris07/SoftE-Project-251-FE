@@ -3837,6 +3837,26 @@ html {
   }
 }
 @layer utilities {
+  /* Tùy chỉnh thanh cuộn */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px; /* Độ rộng thanh cuộn nhỏ gọn */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9; /* Màu nền đường ray (gray-100) */
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1; /* Màu thanh cuộn (gray-300) */
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; /* Màu khi di chuột (gray-400) */
+  }
+}
+@layer utilities {
   .bg-brand-gradient {
     background: linear-gradient(to right, #00C0FF, #0388B4);
     transition: all 0.4s ease;
@@ -3844,5 +3864,30 @@ html {
 
   .bg-brand-gradient:hover {
     background: linear-gradient(to right, #05D5FF, #0270A1);
+  }
+}
+@layer utilities {
+
+  /* Định nghĩa thanh cuộn tùy chỉnh */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    /* Độ dày thanh cuộn */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    /* Màu nền rãnh (xám nhạt) */
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    /* Màu thanh cuộn (xám đậm hơn) */
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+    /* Màu khi di chuột vào */
   }
 }

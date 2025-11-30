@@ -1,28 +1,34 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Sử dụng hook điều hướng
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { Footer } from "../components/layout/Footer";
 import { Users, Calendar, Star, TrendingUp } from "lucide-react";
 
-export function Home({ onNavigate }) {
+export function Home() {
+  // Loại bỏ prop onNavigate
+  const navigate = useNavigate(); // Khởi tạo hook
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#f6f8fc] to-white">
       {/* Header */}
       <header className="bg-brand-gradient w-full h-16 shadow-sm flex items-center px-8">
-      
         {/* Logo + Title */}
         <div className="flex items-center space-x-2">
-          <a href="/" className="flex items-center">
+          {/* Điều hướng về trang chủ */}
+          <button
+            onClick={() => navigate("/")}
+            className="flex items-center space-x-3 focus:outline-none"
+          >
             <img
               src="/logoBK.png"
               alt="Logo BK"
               className="w-10 h-10 object-contain bg-transparent"
             />
-            <span className="text-white text-lg font-semibold leading-none"></span>
-          </a>
-          <h1 className="text-white text-lg font-medium ml-4">
-            Tutor Support System
-          </h1>
+            <h1 className="text-white text-lg font-medium ml-4">
+              Tutor Support System
+            </h1>
+          </button>
         </div>
 
         {/* Right side (Language + Login) */}
@@ -31,7 +37,7 @@ export function Home({ onNavigate }) {
             Vietnamese (vi)
           </button>
           <button
-            onClick={() => onNavigate("login")}
+            onClick={() => navigate("/login")} // Sửa: Dùng navigate("/login")
             className="text-white text-sm font-medium hover:underline"
           >
             Đăng nhập
@@ -57,7 +63,7 @@ export function Home({ onNavigate }) {
           </p>
 
           <Button
-            onClick={() => onNavigate("login")}
+            onClick={() => navigate("/login")} // Sửa: Dùng navigate("/login")
             className="bg-brand-gradient text-white px-8 py-6 rounded-lg text-lg font-semibold hover:bg-[#026d91] transition-all"
           >
             Đăng nhập ngay

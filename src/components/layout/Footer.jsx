@@ -5,14 +5,14 @@ export function Footer() {
     <footer className="bg-brand-gradient h-16 flex items-center px-8">
       {/* 🔹 Logo + Title */}
       <div className="flex items-center space-x-2">
-        <a href="/" className="flex items-center">
+        <button onClick={() => navigate(user ? `/${user.role}` : "/login")}>
           <img
             src="/logoBK.png"
             alt="Logo BK"
             className="w-10 h-10 object-contain bg-transparent"
           />
           <span className="text-white text-lg font-semibold leading-none"></span>
-        </a>
+        </button>
         <div>
           <h2 className="text-white text-base font-medium">
             Tutor Support System
